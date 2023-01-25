@@ -16,7 +16,7 @@ while True:
         pp(contacts , width = 1)
     elif ch == 3:
         name = input('Enter name: ')
-        if name in contact:
+        if name in contacts:
             contacts.pop(name)
         print('contact deleted')
     elif ch == 4:
