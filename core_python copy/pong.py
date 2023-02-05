@@ -1,7 +1,7 @@
 import pgzrun
 
-WIDTH = 800
-HEIGHT = 500
+WIDTH = 1000
+HEIGHT = 650
 
 box_red = Rect((10,10),(20,100))
 box_blue = Rect((WIDTH-30,10),(20,100))
@@ -22,7 +22,7 @@ def update():
     brs = move_vertically(box_red,brs)
     bbs = move_vertically(box_blue,bbs) 
     bs = move_ball(ball,bs)
-    # print(box_blue.bottom,box_blue.top,bbs)
+    print(box_blue.bottom,box_blue.top,bbs)
 
 def move_vertically(box,speed):
         box.y +=speed
